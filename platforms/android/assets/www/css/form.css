@@ -1,0 +1,13 @@
+/* ========================= FORMULÁRIO LOGIN ===================== */
+	 
+	.input {
+		display: block; 
+		width: 50%;
+		height: 2em;
+		margin: 5px auto 10px auto !important;
+	}
+	
+	.btn-padrao {
+		display: block;
+		margin: 0 auto !important;
+	} 

@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-size: 14px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.cf:after {content:"."; display:block; clear:both; visibility:hidden; height:0; overflow:hidden;}
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+#fundo-logo {
+    background: url('../images/fundo-azul.jpg') repeat-x;
+    height: 37%;
+    width: 100%;
+}
+
+#logo {
+    background-image: url('../images/logo-mnimoveis-mobile.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
+    width: 100%;
+    height: 100%;
+}
+
+#camposlogin {
+    width: 100%;
+    height: 63%;
+}
+
+#topo {
+    height: 70px;
+    background-color: #5c6697;
+    position: relative;
+    width: 100%;
+}
+
+
+#topo img {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    float: left;
+}
+
+#topo p {
+    padding-top: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#topo p span {
+    font-size: 18px;
+}
+
+.mask-avatar {
+    background: url('../images/mask-avatar.png') no-repeat;
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    top: 9px;
+    left: 0;
+}
+
+/* ================== COMEÇA MENU PRINCIPAL ================= */
+
+#menu {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: #323544;
+}
+
+ul.menu-lateral {
+        padding: 28px 0 0 15px;
+        list-style: none;
+    }
+    
+    ul.menu-lateral a {
+        padding: 11px 0 0 0;
+        margin-bottom: 14px;
+        display: inline-block;
+    }
+    
+    ul.menu-lateral span {
+        width: 24px;
+        height: 28px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 22px 8px 0;
+    }
+    
+    .dashboard {
+        background: url(../images/icons.png) 0 0;
+    }
+    ul.menu-lateral a:hover .dashboard {
+        background: url(../images/icons.png) -48px 0;
+    }
+    
+    .propriedades {
+        background: url(../images/icons.png) 0 220px; 
+    }
+    ul.menu-lateral a:hover .propriedades {
+        background: url(../images/icons.png) -48px 220px;
+    }
+    
+    .tipo {
+        background: url(../images/icons.png) 0 184px; 
+    }
+    ul.menu-lateral a:hover .tipo {
+        background: url(../images/icons.png) -48px 184px;
+    }
+    
+    .localidades {
+        background: url(../images/icons.png) 0 147px; 
+    }
+    ul.menu-lateral a:hover .localidades {
+        background: url(../images/icons.png) -48px 147px;
+    }
+    
+    .caracteristica {
+        background: url(../images/icons.png) 0 111px; 
+    }
+    ul.menu-lateral a:hover .caracteristica {
+        background: url(../images/icons.png) -48px 111px;
+    }
+    
+    .paginas {
+        background: url(../images/icons.png) 0 68px; 
+    }
+    ul.menu-lateral a:hover .paginas {
+        background: url(../images/icons.png) -48px 68px;
+    }
+    
+    .config {
+        background: url(../images/icons.png) 0 27px; 
+    }
+    ul.menu-lateral a:hover .config {
+        background: url(../images/icons.png) -48px 27px;
+    } 
+    
+    .menu-active {
+        -webkit-transform: translateX(163px) !important;
+        transform: translateX(163px) !important;
+
+        -webkit-transition: all .25s linear;
+        transition: all .25s linear;
+    }
+
+/* ================== FECHA MENU PRINCIPAL ================= */
+
+:target {
+    height: 100%;
+    position: absolute;
+}
+
+.identidade {
+    width: 96%;
+}
+
+.icon-menu {
+    display: inline-block;
+    background: url('../images/icons.png') 92px 0;
+    width: 36px;
+    height: 28px;
+    margin: 20px 0 0 20px;
+}
+
+#conteudo {
+    background-color: #3D87D0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+
+    -webkit-transform: translateX(57px);
+    transform: translateX(57px);
+
+    -webkit-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+
+.titulo {
+    height: 70px;
+    background-color: #fff;
+}
+
+
+
+
