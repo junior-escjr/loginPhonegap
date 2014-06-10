@@ -19,10 +19,10 @@ data = {
 		
 	},
 
-	verificaUsuario: function(dados){
-		var user = dados.usuario;
-		var senha = dados.pass;
-		alert(user);
+	verificaUsuario: function(){
+		//var user = dados.usuario;
+		//var senha = dados.pass;
+		alert("user");
 	}
 
 	
