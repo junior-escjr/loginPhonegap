@@ -30,7 +30,7 @@ $(document).ready(function(){
     	$(target).removeClass("hidden");
 	});
 	
-	data.onDeviceReady();
+	data.init();
 
 });
 
