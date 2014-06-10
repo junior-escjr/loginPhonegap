@@ -1,8 +1,8 @@
 data = {
 
 	init: function(){
-		//var btn = document.getElementById("login");
-		document.addEventListener("deviceready", data.onDeviceReady, false); 
+		var btn = document.getElementById("login");
+		btn.addEventListener("click", data.onDeviceReady, false); 
 		//this.verificaUsuario();
 	},
 
