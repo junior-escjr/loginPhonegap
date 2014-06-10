@@ -18,8 +18,6 @@ window.addEventListener("resize", redimensionar);
 
 //FUNÇÃO EXIBIR MENU LATERAL POR COMPLETO
 
-data.init();
-
 $(document).ready(function(){
 	$('.icon-menu').on('click touchstart', function(e){
 		$('#conteudo').toggleClass('menu-active');
@@ -31,6 +29,8 @@ $(document).ready(function(){
 		$(".identidade").addClass("hidden");
     	$(target).removeClass("hidden");
 	});
+	
+	data.init();
 
 });
 
