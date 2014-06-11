@@ -1,8 +1,8 @@
 data = {
 
 	init: function(){
-		//var btn = document.getElementById("login");
-		document.addEventListener("deviceready", this.onDeviceReady, false); 
+		var btn = document.getElementById("login");
+		btn.addEventListener("click", data.onDeviceReady, false); 
 		//this.verificaUsuario();
 	},
 
@@ -19,10 +19,10 @@ data = {
 		
 	},
 
-	verificaUsuario: function(dados){
-		var user = dados.usuario;
-		var senha = dados.pass;
-		alert(user);
+	verificaUsuario: function(){
+		//var user = dados.usuario;
+		//var senha = dados.pass;
+		alert("user");
 	}
 
 	
