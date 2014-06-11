@@ -1,3 +1,4 @@
+
 //ALTURA DA DIV #MENU DINÂMICAMENTE
 
 var altura = document.documentElement.clientHeight;
@@ -18,7 +19,7 @@ window.addEventListener("resize", redimensionar);
 
 //FUNÇÃO EXIBIR MENU LATERAL POR COMPLETO
 
-data.init();
+
 
 $(document).ready(function(){
 	$('.icon-menu').on('click touchstart', function(e){
@@ -31,6 +32,8 @@ $(document).ready(function(){
 		$(".identidade").addClass("hidden");
     	$(target).removeClass("hidden");
 	});
+
+	data.init();
 
 });
 
