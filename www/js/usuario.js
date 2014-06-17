@@ -8,14 +8,17 @@ data = {
 
 	onDeviceReady: function(){
 
-		// var dados = {
-		//     usuario: $("#login-adm").val(),
-		//     pass: $("#senha_adm").val()
-		//   };
+		localStorage.setItem('dados', 'Junior');
 
-		// data.verificaUsuario(dados);
+		var t = localStorage.getItem("dados");
 
-		alert("teste");
+		if (t) {
+			$("#fundo-logo, #camposlogin").hide();
+			$("#conteudo, #dashboard").removeClass("hidden");
+		}
+		else {
+			$("#fundo-logo, #camposlogin").show();
+		}
 		
 	},
 
