@@ -193,6 +193,7 @@ ul.menu-lateral {
     height: 100%;
     background-color: #3D87D0;
     position: absolute;
+    z-index: 999;
 
     -webkit-transform: translateX(57px);
     transform: translateX(57px);
