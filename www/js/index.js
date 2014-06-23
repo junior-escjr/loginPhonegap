@@ -23,7 +23,7 @@ window.addEventListener("resize", redimensionar);
 
 $(document).ready(function(){
 	$('.icon-menu').on('click touchstart', function(e){
-		$('#conteudo').toggleClass('menu-active');
+		$('#info-conteudo').toggleClass('menu-active');
   		e.preventDefault();
 	});
 

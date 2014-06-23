@@ -16,91 +16,37 @@
 
     </head>
     <body>
+        
         <div id="container">
-
-            <div id="fundo-logo">
-                <div id="logo"></div>
-            </div>
-            <div id="camposlogin">
-                <form>
-                  <input type="text" name="login_adm" id="login-adm" class="input" placeholder="Login">
-                  <input type="password" name="senha_adm" id="senha_adm" class="input" placeholder="Senha">
-                  <button id="login" class="btn-padrao">Logar</button>
-                </form>
-                <div id="msg"></div>
-            </div>
-            
-            
-            <!-- COMEÇA CONTEUDO -->
-            <div id="conteudo" class="hidden">
-
-                <!-- COMEÇA DASHBOARD -->
-                <div id="dashboard" class="hidden identidade">
-                    <div class="titulo">
-                        <span class="icon-menu"></span>
-                            Dashboard
-                    </div>
+            <div id="login" class="hidden">
+                <div id="fundo-logo">
+                    <div id="logo"></div>
                 </div>
-                <!-- FECHA DASHBOARD -->
-
-                <!-- COMEÇA PROPRIEDADES -->
-                <div id="propriedades" class="hidden identidade">
-                    <div class="titulo">
-                        <span class="icon-menu"></span>
-                            Propriedades
-                    </div>
+                <div id="camposlogin">
+                    <form>
+                      <input type="text" name="login_adm" id="login-adm" class="input" placeholder="Login">
+                      <input type="password" name="senha_adm" id="senha_adm" class="input" placeholder="Senha">
+                      <button class="btn-padrao">Logar</button>
+                    </form>
+                    <div id="msg"></div>
                 </div>
-                <!-- FECHA PROPRIEDADES -->
+                
+            </div><!-- FECHA LOGIN -->
 
-                <!-- COMEÇA TIPO -->
-                <div id="tipo" class="hidden identidade">
-                    <div class="titulo">
-                        <span class="icon-menu"></span>
-                            Tipo
+            <div id="conteudo">
+
+                <div id="info-conteudo">
+                    <!-- COMEÇA DASHBOARD -->
+                    <div id="dashboard" class="identidade">
+                        <div class="titulo">
+                            <span class="icon-menu"></span>
+                                Dashboard
+                        </div>
                     </div>
-                </div>
-                <!-- FECHA TIPO -->
+                    <!-- FECHA DASHBOARD -->
+                </div><!-- FECHA INFO-CONTEUDO -->
 
-                <!-- COMEÇA LOCALIDADES -->
-                <div id="localidades" class="hidden identidade">
-                    <div class="titulo">
-                        <span class="icon-menu"></span>
-                            Localidades
-                    </div>
-                </div>
-                <!-- FECHA LOCALIDADES -->
-
-                <!-- COMEÇA CARACTERISTICAS -->
-                <div id="caracteristicas" class="hidden identidade">
-                    <div class="titulo">
-                        <span class="icon-menu"></span>
-                            Características
-                    </div>
-                </div>
-                <!-- FECHA CARACTERISTICAS -->
-
-                <!-- COMEÇA PÁGINAS -->
-                <div id="paginas" class="hidden identidade">
-                    <div class="titulo">
-                        <span class="icon-menu"></span>
-                            Páginas
-                    </div>
-                </div>
-                <!-- FECHA PÁGINAS -->
-
-                <!-- COMEÇA CONFIGURAÇÕES -->
-                <div id="configuracoes" class="hidden identidade">
-                    <div class="titulo">
-                        <span class="icon-menu"></span>
-                            Configurações
-                    </div>
-                </div>
-                <!-- FECHA CONFIGURAÇÕES -->
-
-
-
-
-                <!-- COMEÇA AVATAR E MENUS -->
+                <!-- MENU DE NAVEGAÇÃO -->
                 <div id="topo" class="cf">
                     <div class="mask-avatar"></div>
                     <img src="images/avatar.jpg" height="52" width="52" alt="" />
@@ -117,11 +63,13 @@
                         <li><a href="#configuracoes"><span class="config"></span>Configurações</a></li>
                     </ul>
                 </div>
-            
-            <!-- FECHA AVATAR E MENUS -->
+                <!-- FECHA MENU DE NAVEGAÇÃO -->
 
             </div><!-- FECHA CONTEUDO -->
-        </div>
+
+
+        </div><!-- FECHA CONTAINER -->
+
         <script src="js/jquery-2.1.1.min.js"></script>
         <script src="js/usuario.js"></script>
         <script src="js/index.js"></script>
