@@ -13,11 +13,8 @@ data = {
 		var t = localStorage.getItem("dados");
 
 		if (t) {
-			$("#fundo-logo, #camposlogin").hide();
-			$("#conteudo, #dashboard").removeClass("hidden");
-		}
-		else {
-			$("#fundo-logo, #camposlogin").show();
+			$("#login").hide();
+			$("#conteudo").removeClass("hidden");
 		}
 		
 	},
