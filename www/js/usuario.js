@@ -8,7 +8,7 @@ data = {
 
 	onDeviceReady: function(){
 
-		localStorage.setItem('dados', 'Junior');
+		localStorage.setItem('dados', '');
 
 		var t = localStorage.getItem("dados");
 
