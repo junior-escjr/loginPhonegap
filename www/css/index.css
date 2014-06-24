@@ -208,6 +208,8 @@ ul.menu-lateral {
     background-color: #fff;
 }
 
-
+.content {
+    overflow: scroll;
+}
 
 

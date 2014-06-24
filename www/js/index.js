@@ -2,13 +2,16 @@
 //ALTURA DA DIV #MENU DINÂMICAMENTE
 
 var altura = document.documentElement.clientHeight;
-
 document.querySelector("#menu").style.height = altura - 70 + "px";
+
+document.querySelector(".content").style.height = altura - 70 + "px";
 
 function redimensionar(){
     var altura = document.documentElement.clientHeight;
 
     document.querySelector("#menu").style.height = altura - 70 + "px";
+
+    document.querySelector(".content").style.height = altura - 70 + "px";
 }
 
 window.addEventListener("resize", redimensionar);
