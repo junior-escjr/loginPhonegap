@@ -8,6 +8,8 @@
 	}
 	
 	.btn-padrao {
-		display: block;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
 		margin: 0 auto !important;
 	} 

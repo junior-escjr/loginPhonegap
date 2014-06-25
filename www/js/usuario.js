@@ -1,3 +1,5 @@
+dados = {}
+
 data = {
 
 	init: function(){
@@ -7,8 +9,6 @@ data = {
 	},
 
 	onDeviceReady: function(){
-
-		localStorage.setItem('dados', '');
 
 		var t = localStorage.getItem("dados");
 
@@ -20,9 +20,29 @@ data = {
 	},
 
 	verificaUsuario: function(dados){
-		var user = dados.usuario;
-		var senha = dados.pass;
-		alert(user);
+		
+		dados.usuario: $("#login-adm").val(),
+		dados.senha: $("#senha_adm").val()
+		
+		
+		("#msg").html('<img src="350.gif" alt="" />');
+
+		$.ajax({
+			type: "GET",
+			url: "http://meumobile.url.ph/api-json/consulta-json.php",
+			data: dados,
+			dataType: "json",
+			crossDomain: true
+		}).done(function(msg){
+			if(msg.resultado == 1){
+				localStorage.setItem("data", JSON.stringify(dados));
+			}
+			else {
+				$("#msg").html(msg.mensagem);
+				console.log();
+			}
+				
+		});
 	}
 
 	
