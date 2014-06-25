@@ -3,9 +3,10 @@ dados = {}
 data = {
 
 	init: function(){
-		//var btn = document.getElementById("login");
-		document.addEventListener("deviceready", this.onDeviceReady, false); 
-		//this.verificaUsuario();
+		document.addEventListener("deviceready", this.onDeviceReady, false);
+
+		var btn = document.getElementById("btn-login");
+		btn.addEventListener("click", this.verificaUsuario, false); 
 	},
 
 	onDeviceReady: function(){
@@ -19,13 +20,13 @@ data = {
 		
 	},
 
-	verificaUsuario: function(dados){
+	verificaUsuario: function(){
 		
-		dados.usuario: $("#login-adm").val(),
-		dados.senha: $("#senha_adm").val()
+		dados.usuario = $("#login-adm").val();
+		dados.senha = $("#senha_adm").val();
 		
 		
-		("#msg").html('<img src="350.gif" alt="" />');
+		$("#msg").html('<img src="350.gif" alt="" />');
 
 		$.ajax({
 			type: "GET",
@@ -35,7 +36,8 @@ data = {
 			crossDomain: true
 		}).done(function(msg){
 			if(msg.resultado == 1){
-				localStorage.setItem("data", JSON.stringify(dados));
+				//localStorage.setItem("data", JSON.stringify(dados));
+				alert();
 			}
 			else {
 				$("#msg").html(msg.mensagem);
